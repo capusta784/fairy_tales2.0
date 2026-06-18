@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мир сказок</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <!-- Затемнение при переходе -->
+    <div class="transition-overlay"></div>
+    <!-- Шапка -->
+    <header class="header">
+      <button class="menu-btn">☰ МЕНЮ</button>
+      <div class="logo">
+        <h1>МИР СКАЗОК</h1>
+        <p>открой свою историю</p>
+      </div>
+      <button class="book-btn">📖 МОЯ КНИГА</button>
+    </header>
+    <main class="hero">
+      <!-- Солнце -->
+      <section class="day-side">
+        <button class="sun-button" id="sunButton"></button>
+        <div class="day-text">
+          <a href="day-story.html">
+            <img src="images/sun.PNG" alt="Сказки днём" class="sun" />
+          </a>
+          <h2>Сказки днём</h2>
+          <p>
+            Яркие приключения<br />
+            и весёлые истории
+          </p>
+        </div>
+      </section>
+      <section class="night-side">
+        <!-- Луна -->
+        <button class="moon-button" id="moonButton"></button>
+        <div class="night-text">
+          <a href="night-story.html" class="night-story">
+            <img src="images/moon.png" alt="Сказки перед сном" class="moon" />
+          </a>
+          <h2>Сказки перед сном</h2>
+          <p>
+            Добрые истории<br />
+            для сладких снов
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

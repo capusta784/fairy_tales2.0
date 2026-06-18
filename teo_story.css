@@ -1,0 +1,65 @@
+/* 1. Создаем контейнер для фиксированного фона */
+.background-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ширина равна ширине видимой области */
+    height: 100vh; /* Высота равна высоте видимой области */
+    background-image: url(images/day-bac.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Ключевое свойство: фон не прокручивается */
+    z-index: -1; /* Помещаем фон под все остальные элементы */
+}
+
+/* 2. Стили для основного контента */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0; /* Убираем стандартные отступы body */
+    padding: 30px;
+    min-height: 100vh;
+}
+
+/* 3. Добавляем отступ сверху для контента, равный высоте шапки (header) */
+main {
+    margin-top: 60px; /* Значение должно быть >= высоты вашего header */
+}
+
+/* Остальные ваши стили остаются без изменений */
+.story-window {
+  width: 80%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.story-title {
+  color: #000;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.story-header h1 {
+  font-family: "Marck Script", cursive;
+  font-size: 50px;
+  color: #8b5a20;
+}
+
+.back-btn {
+  text-decoration: none;
+  background: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+  color: #5b4b2f;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #f4c34e;
+}

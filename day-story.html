@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чтение сказки</title>
+
+    <link rel="stylesheet" href="day-story.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="story-header">
+      <a href="index.html" class="back-btn"> ← Назад к сказкам </a>
+    </header>
+
+    <main class="story-wrapper">
+      <section class="day-storyes">
+        <!-- Первая карточка -->
+        <div class="f-story story-card">
+          <!-- Обернули всё в тег <a>. Замените "teo_story.html" на имя вашего файла -->
+          <a href="teo_story.html" class="story-link">
+            <img
+              src="images/teo.png"
+              alt="Милосердие Тэо"
+              class="story-image"
+            />
+            <h2 class="title">Милосердие Тэо!</h2>
+          </a>
+        </div>
+        <!-- Вторая карточка -->
+        <div class="s-story story-card">
+          <!-- Обернули всё в тег <a>. Замените "mimi_story.html" на имя вашего файла -->
+          <a href="mimi_story.html" class="story-link">
+            <img
+              src="images/mimi.png"
+              alt="Аккуратно Мими!"
+              class="story-image"
+            />
+            <h2 class="title">Аккуратно Мими!</h2>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="day-story.js"></script>
+  </body>
+</html>

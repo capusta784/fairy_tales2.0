@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/night-bac.png);
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.story-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.story-header h1 {
+  font-family: "Marck Script", cursive;
+  font-size: 50px;
+  color: #8b5a20;
+}
+
+.back-btn {
+  text-decoration: none;
+  background: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+  color: #5b4b2f;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #f4c34e;
+  transition: width 0.4s ease-in-out; /* Плавный переход для изменения ширины */
+}
+
+/* --- НОВЫЕ СТИЛИ ДЛЯ КАРТОЧЕК --- */
+
+.story-wrapper {
+    display: flex;
+    justify-content: center; /* Центрирует карточки по горизонтали */
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
+}
+
+.day-storyes {
+    display: flex; /* Используем флексбокс для расположения карточек рядом */
+    gap: 30px; /* Отступ между карточками */
+    width: fit-content; /* Делает ширину контейнера равной ширине контента */
+}
+
+/* Общий стиль для карточек */
+.story-card {
+    width: 250px;
+    border-radius: 25px; /* Закругленные углы */
+    overflow: hidden; /* Чтобы изображение не выходило за границы закругленных углов */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Добавляет легкую тень */
+    transition: transform 0.4s ease-in-out; /* Плавный переход для трансформации */
+    cursor: pointer; /* Меняет курсор при наведении */
+}
+
+/* Эффект при наведении курсора - покачивание и наклон */
+.story-card:hover {
+    transform: rotate(-3deg) translateY(-5px);
+}
+
+/* Стиль для изображения */
+.story-image {
+    width: 100%;
+    display: block; /* Убирает отступ под изображением */
+}
+
+/* Стиль для заголовка внутри карточки */
+.story-card .title {
+    text-align: center; /* Центрирует текст */
+    padding: 15px; /* Отступы внутри карточки */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.9
+    ); /* Полупрозрачный фон для лучшей читаемости */
+}
+
+.story-card .story-link {
+    display: block; /* Растягивает ссылку на всю ширину родителя */
+    text-decoration: none; /* Убирает подчёркивание */
+    color: inherit; /* Наследует цвет текста по умолчанию, чтобы он не менялся */
+    height: 100%; /* Убедитесь, что ссылка занимает всю высоту карточки */
+}

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(images/background.png);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu-btn,
+.book-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.8);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu-btn:hover,
+.book-btn:hover {
+    transform: translateY(-3px);
+    background: white;
+}
+.logo {
+    text-align: center;
+}
+.logo h1 {
+    font-size: 40px;
+    color: #704E1D;
+    font-family: 'Marck Script', cursive;
+    letter-spacing: 2px;
+}
+.logo p {
+    color: #6B6B6B;
+    font-size: 14px;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-btn, .book-btn {
+        margin-bottom: 15px;
+    }
+
+    .day-side h2, .night-side h2 {
+        font-size: 28px;
+    }
+}
+
+.day-side, .night-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.day-side h2, .night-side h2,
+.day-side p, .night-side p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.day-side h2 {
+    color: #704e1d;
+    font-size: 42px;
+}
+.night-side h2 {
+    color: white;
+    font-size: 42px;
+}
+.day-side p {
+    color: #5a4a33;
+    font-size: 18px;
+}
+.night-side p {
+    color: #DADCF5;
+    font-size: 18px;
+}
+
+.sun, .moon {
+    max-width: 70%;
+    height: auto;
+    transition: 0.5s;
+}
+
+.sun-button {
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sun:hover {
+    transform: scale(1.08);
+}
+
+.moon-button {
+    position: absolute;
+    top: 120px;
+    right: 140px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.moon:hover {
+    transform: scale(1.08);
+}
